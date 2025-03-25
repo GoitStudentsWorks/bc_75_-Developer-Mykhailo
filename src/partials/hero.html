@@ -1,5 +1,88 @@
 <section class="hero">
   <div class="container">
-    <!-- enter your code here -->
+    <div class="hero-top">
+      <div class="hero-top-wrapper">
+        <h1 class="hero-title">
+          Welcome to our <span class="accent">collection</span> of premium
+          watches
+        </h1>
+        <p class="hero-descr">
+          Our watches are not just timepieces, but also an expression of your
+          personality and lifestyle. From classic designs to modern ones, we
+          have a watch to suit every taste and occasion.
+        </p>
+      </div>
+
+      <div class="hero-top-side">
+        <ul class="hero-side-list">
+          <li class="hero-side-item">
+            <img
+              src="/img/hero/hero-avatar1.png"
+              alt="avatar"
+              class="hero-side-avatar"
+              aria-label="person's avatar"
+              width="44"
+              height="44"
+            />
+          </li>
+          <li class="hero-side-item">
+            <img
+              src="/img/hero/hero-avatar2.png"
+              alt="avatar"
+              class="hero-side-avatar"
+              aria-label="person's avatar"
+              width="44"
+              height="44"
+            />
+          </li>
+          <li class="hero-side-item">
+            <img
+              src="/img/hero/hero-avatar3.png"
+              alt="avatar"
+              class="hero-side-avatar"
+              aria-label="person's avatar"
+              width="44"
+              height="44"
+            />
+          </li>
+        </ul>
+
+        <a href="#" class="hero-top-scroll">Scroll down</a>
+      </div>
+    </div>
+
+    <div class="hero-bg">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            /img/hero/hero-bg-desk-min.png    1x,
+            /img/hero/hero-bg-desk@2x-min.png 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/hero/hero-bg-tab-min.png    1x,
+            /img/hero/hero-bg-tab@2x-min.png 2x
+          "
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/hero/hero-bg-mob-min.png    1x,
+            /img/hero/hero-bg-mob@2x-min.png 2x
+          "
+        />
+
+        <img
+          src="/img/hero/hero-bg-mob-min.png"
+          alt="picture of watch"
+          class="hero-bg-img"
+        />
+      </picture>
+    </div>
   </div>
 </section>
