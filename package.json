@@ -1,11 +1,11 @@
 {
-  "name": "template-deploy-project",
+  "name": "style-watch",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/template-deploy-project/",
+    "build": "vite build --base=/style-watch/",
     "preview": "vite preview"
   },
   "devDependencies": {

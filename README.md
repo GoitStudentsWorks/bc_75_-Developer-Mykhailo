@@ -1,1 +1,1 @@
-This is a practice project proect created by team DevSquad
+This is a practice project created by team DevSquad
