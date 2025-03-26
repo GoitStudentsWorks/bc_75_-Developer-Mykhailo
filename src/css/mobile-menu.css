@@ -1,0 +1,134 @@
+/* #region Mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-image:  url("/img/mob-menu-img/mob-menu-mob-min.jpg");
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 240px 64px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mobile-menu.is-open {
+    transform: translateX(0%);
+  }
+  @media screen and (min-width: 768px) {
+    .mobile-menu {
+      width: 330px; 
+      padding: 310px 128px 128px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .mobile-menu {
+  display: none;
+    }
+  }
+  
+  @media screen and (min-resolution: 192dpi) {
+    .mobile-menu {
+      background-image: url("/img/mob-menu-img/mob-menu-mob@2x-min.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .mobile-menu {
+      background-image: url("/img/mob-menu-img/mob-menu-tab-min.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .mobile-menu {
+      background-image: url("/img/mob-menu-img/mob-menu-tab@2x-min.jpg");
+    }
+  }
+  .mobile-menu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .mobile-menu-close-icon {
+  stroke-width: 2.50px;
+  stroke: #fbfbfb;
+  }
+  .mobile-menu-nav-list {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: auto;
+  }
+  .mobile-menu-list-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    .mobile-menu-close-btn {
+      top: 26px;
+      right: 32px;
+      width: 40px;
+      height: 40px;
+    }
+    .mobile-menu-list-item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    }
+  .mobile-menu-link {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #fbfbfb;
+  position: relative;
+  white-space: nowrap;
+  }
+  .home-active::after  {
+    position: absolute;
+    content: '';
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #3350e9;
+    border-radius: 100%;
+  }
+  .mobile-social-list {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    .mobile-social-link {
+      width: 36px;
+      height: 36px;
+    }
+    }
+  .mobile-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid rgba(251, 251, 251, 0.1);
+  }
+  .mobile-social-img:hover, .mobile-social-img:focus {
+    fill: #ffff;
+  }
+  .mobile-social-img {
+    fill: #fbfbfb;
+    opacity: 0.8;
+  }
+  /* endregion Mobile menu */
+  
