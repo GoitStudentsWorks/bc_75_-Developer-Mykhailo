@@ -15,11 +15,13 @@
 
 /* @import url('./advertisement.css'); */
 
-/* @import url('./sale.css'); */
+@import url('./sale.css');
 
 /* @import url('./revievs.css'); */
 
 /* @import url('./contact.css'); */
+
+@import url('./contact.css');
 
 /* @import url('./footer.css'); */
 
