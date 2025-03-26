@@ -1,17 +1,18 @@
-/* Main CSS */
+/* Contact US */
+/* Chernysh Illia */
+
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .contact-title {
-    font-family: var(--font-family);
     font-weight: 600;
     font-size: 32px;
     line-height: 1;
     letter-spacing: -0.02em;
     color: var(--main);
     margin-bottom: 24px;
-}
-
-.contact-section-container {
-    min-width: 100%;
 }
 
 .contact-form {
@@ -21,18 +22,11 @@
 .contact-form-container {
     border-radius: 30px;
     padding: 48px 28px;
-    min-height: 416px;
     background-color: var(--cards);
     margin-bottom: 20px;
 }
 
-.contact-form-wrapper {
-    max-width: 100%;
-    margin: 0 auto 28px;
-}
-
 .contact-form-container-text {
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
@@ -69,7 +63,7 @@
 }
 
 .contact-user-comment {
-    font-family: var(--font-family);
+    display: block;
     border: 1px solid rgba(12, 12, 12, 0.15);
     border-radius: 12px;
     padding: 12px 14px;
@@ -81,7 +75,6 @@
 }
 
 .contact-user-comment::placeholder {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -92,9 +85,12 @@
     border-color: var(--accent);
 }
 
+.contact-filed-wrapper-comment {
+    margin-bottom: 28px;
+}
+
 .contact-send-btn {
     display: block;
-    font-family: var(--font-family);
     background-color: var(--accent);
     color: var(--background);
     font-weight: 500;
@@ -115,12 +111,9 @@
     background-color: #1f3cd4;
 }
 
-.contact-picture {
+.contact-img-thumb {
     border-radius: 30px;
-}
-
-.contact-image {
-    border-radius: 50px;
+    overflow: hidden;
 }
 
 /* Tablet */
@@ -128,6 +121,7 @@
     .contact-title {
         font-size: 48px;
         line-height: 0.92;
+        margin-bottom: 40px;
     }
 
     .contact-form-container {
@@ -162,12 +156,16 @@
         line-height: 1.25;
     }
 
-    .contact-send-btn {
-        min-width: 160px;
-        height: 54px;
+    .contact-filed-wrapper-comment {
+        margin-bottom: 32px;
     }
 
-    .contact-picture {
+    .contact-send-btn {
+        min-width: 160px;
+        height: 52px;
+    }
+
+    .contact-img-thumb {
         border-radius: 50px;
     }
 }
