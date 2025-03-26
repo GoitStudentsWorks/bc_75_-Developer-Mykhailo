@@ -82,7 +82,7 @@
 .sale-card-subtitle {
     font-weight: 600;
     font-size: 24px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: -0.02em;
     color: var(--background);
     margin-bottom: 10px;
@@ -91,7 +91,7 @@
 .sale-card-id {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.28;
     letter-spacing: -0.02em;
     color: rgba(251, 251, 251, 0.5);
     margin-bottom: 20px;
@@ -116,7 +116,7 @@
 }
 
 .sale-card-old-price {
-    padding-top: 8px;
+    align-self: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -144,7 +144,6 @@
 .sale-card-item {
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.33333;
     color: var(--background);
     border: 1px solid rgba(251, 251, 251, 0.2);
     border-radius: 8px;
@@ -155,7 +154,7 @@
     .sale-title {
         margin-bottom: 40px;
         font-size: 48px;
-        line-height: 0.91667;
+        line-height: 0.91;
     }
 
     .sale-wrapper {
@@ -201,7 +200,7 @@
     .sale-card-subtitle {
         margin-bottom: 10px;
         font-size: 32px;
-        line-height: 1.125;
+        line-height: 1.12;
 
     }
 
@@ -227,7 +226,6 @@
 
     .sale-card-item {
         font-size: 14px;
-        line-height: 1.28571;
     }
 }
 
