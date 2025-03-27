@@ -321,9 +321,7 @@
 /* Desktop */
 
 @media screen and (min-width: 1280px) {
-    .footer {
-        /* padding-top: 50px; */
-    }
+   
 
     .footer-container {
         max-width: 1216px;
