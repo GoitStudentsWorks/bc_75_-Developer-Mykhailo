@@ -1,7 +1,7 @@
 /* Footer CSS by Taras Pererva */
 
 .footer {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-bottom: 20px;
 }
 
@@ -165,7 +165,7 @@
 }
 
 .footer-address {
-    max-width: 88px;
+    max-width: 83px;
     font-weight: 500;
     font-size: 12px;
     font-style: normal;
@@ -214,14 +214,14 @@
 
 @media screen and (min-width: 768px) {
     .footer {
-        padding-top: 40px;
+        /* padding-top: 40px; */
         padding-bottom: 32px;
     }
 
     .footer-container {
         max-width: 704px;
         padding: 40px 40px 28px;
-        margin-bottom: 32px;
+        /* margin-bottom: 32px; */
     }
 
     .footer-wrapper-one {
@@ -294,7 +294,7 @@
     }
 
     .footer-address {
-        max-width: 166px;
+        max-width: 162px;
         font-size: 14px;
         line-height: 1.28;
     }
@@ -306,7 +306,7 @@
 
     .copy-description {
         font-size: 14px;
-        line-height: 1.28;
+        line-height: 1.29;
         margin: 0;
     }
 
@@ -317,7 +317,7 @@
 
     .copy-rules-list {
         font-size: 14px;
-        line-height: 1.28;
+        line-height: 1.29;
     }
 }
 
@@ -327,12 +327,12 @@
 
 @media screen and (min-width: 1280px) {
     .footer {
-        padding-top: 50px;
+        /* padding-top: 50px; */
     }
 
     .footer-container {
         max-width: 1216px;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
 
     .footer-wrapper-one {
@@ -345,6 +345,7 @@
         top: 0;
         left: 50%;
         transform: translateX(-50%);
+        width: 523px;
     }
 
     .footer-nav-list {
