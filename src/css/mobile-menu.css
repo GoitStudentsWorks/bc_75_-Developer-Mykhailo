@@ -5,7 +5,10 @@
     right: 0;
     width: 200px;
     height: 100%;
-    background-image:  url("/img/mob-menu-img/mob-menu-mob-min.jpg");
+    background-image: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("/img/mob-menu-img/mob-menu-mob-min.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-color: #0C0C0C; 
     transform: translateX(100%);
     transition-property: transform;
     transition-duration: 250ms;
@@ -32,19 +35,19 @@
   
   @media screen and (min-resolution: 192dpi) {
     .mobile-menu {
-      background-image: url("/img/mob-menu-img/mob-menu-mob@2x-min.jpg");
+      background-image:linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("/img/mob-menu-img/mob-menu-mob@2x-min.jpg");
     }
   }
   
   @media screen and (min-width: 768px) {
     .mobile-menu {
-      background-image: url("/img/mob-menu-img/mob-menu-tab-min.jpg");
+      background-image: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("/img/mob-menu-img/mob-menu-tab-min.jpg");
     }
   }
   
   @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .mobile-menu {
-      background-image: url("/img/mob-menu-img/mob-menu-tab@2x-min.jpg");
+      background-image: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("/img/mob-menu-img/mob-menu-tab@2x-min.jpg");
     }
   }
   .mobile-menu-close-btn {
@@ -73,15 +76,18 @@
     .mobile-menu-close-btn {
       top: 26px;
       right: 32px;
-      width: 40px;
-      height: 40px;
+      width: 20px;
+      height: 20px;
     }
     .mobile-menu-list-item:not(:last-child) {
       margin-bottom: 32px;
     }
+    .mobile-menu-close-icon {
+   width: 40px;
+   height: 40px;
+    }
     }
   .mobile-menu-link {
-  font-family: "Gilroy", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
@@ -108,12 +114,6 @@
     justify-content: center; 
     gap: 10px;
   }
-  @media screen and (min-width: 768px) {
-    .mobile-social-link {
-      width: 36px;
-      height: 36px;
-    }
-    }
   .mobile-social-link {
     display: flex;
     justify-content: center;
@@ -130,5 +130,15 @@
     fill: #fbfbfb;
     opacity: 0.8;
   }
+  @media screen and (min-width: 768px) {
+    .mobile-social-img {
+      width: 20px;
+      height: 20px;
+    }
+    .mobile-social-link {
+      width: 36px;
+      height: 36px;
+    }
+    }
   /* endregion Mobile menu */
   

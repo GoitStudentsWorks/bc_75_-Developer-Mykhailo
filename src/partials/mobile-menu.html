@@ -2,7 +2,7 @@
   <div class="container">
     <div class="mobile-menu">
       <button type="button" class="mobile-menu-close-btn js-mobile-menu">
-        <svg class="mobile-menu-close-icon" width="20" height="20">
+        <svg class="mobile-menu-close-icon" width="34" height="34">
           <use href="/img/sprite.svg#icon-close"></use>
         </svg>
       </button>
@@ -23,7 +23,7 @@
           <a class="mobile-menu-link js-mobile-menu" href="#reviews">Reviews</a>
         </li>
         <li class="mobile-menu-list-item">
-          <a class="mobile-menu-link js-mobile-menu" href="#contact-us">Contact Us</a>
+          <a class="mobile-menu-link js-mobile-menu" href="#contact">Contact Us</a>
         </li>
       </ul>
       <ul class="mobile-social-list">
@@ -69,9 +69,5 @@
     btn.addEventListener("click", () => {
       document.querySelector(".mobile-menu").classList.toggle("is-open");
     });
-  });
-    // open modal
-    document.querySelector(".js-mobile-menu").addEventListener("click", () => {
-    document.querySelector(".mobile-menu").classList.add("is-open");
   });
 </script>
