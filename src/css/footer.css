@@ -1,4 +1,7 @@
 /* Footer CSS by Taras Pererva */
+.footer {
+    padding-bottom: 20px;
+}
 
 .footer-container {
     background-color: var(--main);
@@ -6,7 +9,6 @@
     min-width: 280px;
     max-width: 335px;
     margin: 0 auto;
-    margin-bottom: 20px;
     padding: 40px 28px 28px;
 }
 
@@ -209,14 +211,14 @@
 
 @media screen and (min-width: 768px) {
     .footer {
-        /* padding-top: 40px; */
+      
         padding-bottom: 32px;
     }
 
     .footer-container {
         max-width: 704px;
         padding: 40px 40px 28px;
-        /* margin-bottom: 32px; */
+        
     }
 
     .footer-wrapper-one {
@@ -325,7 +327,7 @@
 
     .footer-container {
         max-width: 1216px;
-        /* margin-bottom: 0; */
+       
     }
 
     .footer-wrapper-one {
