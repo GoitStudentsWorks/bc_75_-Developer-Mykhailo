@@ -104,25 +104,27 @@
   color: #fbfbfb;
   position: relative;
   white-space: nowrap;
-  position: relative;
   }
   .mobile-menu-link::after {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      display: block;
-      top: 20px;
-      left: 50%;
-      margin-left: -4px;
-      width: 8px;
-      height: 8px;
-      border-radius: 4px;
-      background-color: currentColor;
-      opacity: 0;
-      color: var(--accent);
-      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    top: 20px;
+    left: 50%;
+    margin-left: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: currentColor;
+    opacity: 0;
+    color: var(--accent);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-menu-link:is(.current, :hover, :focus)::after {
+    opacity: 1;
+  }
+  .mobile-menu-link.home-active::after {
     opacity: 1;
   }
   .mobile-social-list {
