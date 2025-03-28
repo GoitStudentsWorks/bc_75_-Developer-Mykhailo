@@ -57,6 +57,10 @@
   cursor: pointer;
 }
 
+.about-us-section-paragraph + .about-us-section-paragraph {
+  margin-bottom: 40px;
+}
+
 .view-catalog-link:hover,
 .view-catalog-link:focus {
   background-color: #1f3cd4;
@@ -83,11 +87,6 @@
 /* about-us-tab */
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
   .about-us-section-title {
     font-weight: 600;
     font-size: 48px;
@@ -110,6 +109,10 @@
     line-height: 1.25;
   }
 
+  .about-us-section-paragraph + .about-us-section-paragraph {
+    margin-bottom: 60px;
+  }
+
   .about-us-image-content {
     border-radius: 50px;
   }
@@ -124,12 +127,6 @@
 /* about-us-desk */
 
 @media screen and (min-width: 1280px) {
-  .about-us .container {
-    max-width: 1150px;
-    padding: 0;
-    margin: 0 auto;
-  }
-
   .about-us-section-container {
     display: flex;
     align-items: center;
@@ -155,7 +152,10 @@
     width: 530px;
     height: 532px;
     border-radius: 50px;
-    overflow: hidden;
+  }
+
+  .about-us-section-paragraph + .about-us-section-paragraph {
+    margin-bottom: 40px;
   }
 
   .about-us-image {
