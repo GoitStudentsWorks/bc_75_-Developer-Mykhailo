@@ -10,46 +10,36 @@
   letter-spacing: -0.02em;
   color: #0c0c0c;
 }
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
 .catalog-item {
+  width: 335px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
-  width: 335px;
-
   background-color: #f3f3f3;
-  padding: 24px 28px;
+  padding: 42px 28px 24px 28px;
 }
 .catalog-item picture {
-  display: block;
-}
-
-.pictures-item-cat {
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 10px;
-  width: 279px;
-  height: 316px;
+  width: 208px;
+  align-self: center;
+  margin-bottom: 28px;
 }
 .catalog-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.15;
+  line-height: 1;
   letter-spacing: -0.02em;
-  color: #0c0c0c;
-  text-align: left;
+  color: var(--font-family);
   margin-bottom: 8px;
 }
 
-.cat-text-tit {
-  display: none;
-}
 .catalog-price {
   font-weight: 400;
   font-size: 14px;
@@ -80,63 +70,55 @@
 .btn-catalog:hover {
   background-color: #1f3cd4;
 }
-/* tablet */
 
 @media screen and (min-width: 768px) {
   .catalog {
     padding-top: 80px;
   }
-  .picture-item {
-    display: block;
-  }
   .catalog-title {
     margin-bottom: 40px;
     font-size: 48px;
   }
-  .catalog-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
 
+  .catalog-list {
+    row-gap: 32px;
+    column-gap: 16px;
+  }
   .catalog-item {
     width: 344px;
-    height: 414px;
+    padding: 34px 32px 24px;
   }
-
-  .pictures-item-cat {
-    width: 280px;
-    height: 366px;
+  .picture-item {
+    display: block;
+  }
+  .catalog-item picture {
+    width: 268px;
+    margin-bottom: 20px;
   }
   .catalog-text {
     font-size: 20px;
-    line-height: 1;
+    line-height: 0.8;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
   .catalog-list + .btn-catalog {
     display: none;
   }
 }
-
-/* desktop */
 @media screen and (min-width: 1280px) {
   .catalog {
     padding-top: 100px;
   }
   .catalog-list {
-    row-gap: 32px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    column-gap: 23px;
   }
-
   .catalog-item {
     width: 368px;
+    padding: 30px 31px 24px;
   }
-  .pictures-item-cat {
-    width: 304px;
-    height: 366px;
+  .catalog-item picture {
+    width: 292px;
+    margin-bottom: 24px;
   }
 }
