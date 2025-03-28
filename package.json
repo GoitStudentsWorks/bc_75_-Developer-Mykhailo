@@ -1,11 +1,11 @@
 {
-  "name": "reviews-section",
+  "name": "style-watch",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/reviews-section/",
+    "build": "vite build --base=/style-watch/",
     "preview": "vite preview"
   },
   "devDependencies": {

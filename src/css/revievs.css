@@ -23,9 +23,6 @@
   border-radius: 30px;
   padding: 32px 36px;
   background: var(--cards);
-}
-
-.reviews-item-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,7 +61,7 @@
 
 @media (min-width: 768px) {
   .section-reviews {
-    padding: 40px 0px;
+    padding-top: 80px;
   }
 
   .reviews-item:nth-child(3) {
@@ -117,7 +114,7 @@
 
 @media (min-width: 1280px) {
   .section-reviews {
-    padding: 50px 0px;
+    padding-top: 100px;
   }
 
   .reviews-item:nth-child(2),
