@@ -31,6 +31,7 @@
   align-self: center;
   margin-bottom: 28px;
 }
+
 .catalog-text {
   font-weight: 500;
   font-size: 16px;
@@ -47,9 +48,7 @@
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.5);
 }
-.picture-item {
-  display: none;
-}
+
 .btn-catalog {
   width: 160px;
   height: 48px;
@@ -88,13 +87,11 @@
     width: 344px;
     padding: 34px 32px 24px;
   }
-  .picture-item {
-    display: block;
-  }
+
   .catalog-item picture {
     width: 268px;
-    margin-bottom: 20px;
   }
+
   .catalog-text {
     font-size: 20px;
     line-height: 0.8;
