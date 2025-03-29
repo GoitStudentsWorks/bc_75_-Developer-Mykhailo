@@ -30,6 +30,10 @@
   padding: 42px 28px 24px 28px;
 }
 
+.catalog-item + .catalog-item.show-more {
+  display: block;
+}
+
 .catalog-item picture {
   width: 208px;
   align-self: center;
@@ -94,7 +98,7 @@
 
   .catalog-item {
     width: 344px;
-    padding: 24px 32px 24px;
+    padding: 34px 31px 24px;
   }
 
   .catalog-item picture {
