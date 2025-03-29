@@ -17,4 +17,14 @@ document.querySelectorAll('.btn-catalog').forEach(btn => {
   });
 });
 
-//
+// change inner  text of button
+
+let btnText = document.querySelector('.btn-catalog');
+
+btnText.addEventListener('click', () => {
+  if (btnText.innerText == 'Show more') {
+    btnText.innerText = 'Show less';
+  } else {
+    btnText.innerText = 'Show more';
+  }
+});
