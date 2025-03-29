@@ -1,120 +1,132 @@
+.adv-section {
+  padding-top: 60px;
+}
+
 .adver-container {
-    background-image: url('/img/advertisement/adver-mob.png');
-    background-color: var(--main);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;
-    padding: 60px 28px;
+  background-image: url('/img/advertisement/adver-mob.png');
+  background-color: var(--main);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 60px 28px;
 }
 
 .adver-text {
-    font-weight: 600;
-    font-size: 32px;
-    color: var(--background);
-    line-height: 1;
-    letter-spacing: -0.02em;
-    display: inline-block;
-    margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--background);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  display: inline-block;
+  margin-bottom: 28px;
 }
 
 .adver-text-style {
-    color: rgba(251, 251, 251, 0.5);
+  color: rgba(251, 251, 251, 0.5);
 }
 
 .adver-contact {
-    display: inline-block;
-    padding: 14px 20px;
-    width: 160px;
-    height: 48px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    color: var(--background);
-    border: 1px solid rgba(251, 251, 251, 0.15);
-    border-radius: 12px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  padding: 14px 20px;
+  width: 160px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: var(--background);
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adver-contact:hover,
 .adver-contact:focus {
-    color: var(--main);
-    background-color: var(--background);
+  color: var(--main);
+  background-color: var(--background);
 }
 
 /* Media for Tab */
 
 @media screen and (min-width: 768px) {
-    .adver-container {
-        padding: 80px 64px;
-    }
+  .adv-section {
+    padding-top: 80px;
+  }
 
-    .adver-text {
-        font-size: 48px;
-        line-height: 92%;
-        letter-spacing: -0.02em;
-        margin-bottom: 32px;
-    }
+  .adver-container {
+    padding: 80px 64px;
+  }
+
+  .adver-text {
+    font-size: 48px;
+    line-height: 92%;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
 }
 
 /* Media for Desktop */
 
 @media screen and (min-width: 1280px) {
-    .adver-container {
-        padding: 83px 80px;
-    }
+  .adv-section {
+    padding-top: 100px;
+  }
 
-    .adver-text {
-        max-width: 690px;
-        margin-bottom: 0;
-    }
+  .adver-container {
+    padding: 83px 80px;
+  }
 
-    .adver-contact {
-        display: inline-block;
-        padding: 14px 20px;
-        width: 160px;
-        height: 48px;
-        vertical-align: top;
-        margin-left: 135px;
-    }
+  .adver-text {
+    max-width: 690px;
+    margin-bottom: 0;
+  }
+
+  .adver-contact {
+    display: inline-block;
+    padding: 14px 20px;
+    width: 160px;
+    height: 48px;
+    vertical-align: top;
+    margin-left: 135px;
+  }
 }
 
 /*-- Media for screen --*/
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .adver-container {
-        background-image: url('/img/advertisement/adver-mob@2x.png');
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .adver-container {
+    background-image: url('/img/advertisement/adver-mob@2x.png');
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .adver-container {
-        background-image: url('/img/advertisement/adver-tab.png');
-    }
+  .adver-container {
+    background-image: url('/img/advertisement/adver-tab.png');
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .adver-container {
-            background-image: url('/img/advertisement/adver-tab@2x.png');
-        }
+    .adver-container {
+      background-image: url('/img/advertisement/adver-tab@2x.png');
     }
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .adver-container {
-        background-image: url('/img/advertisement/adver-desk.png');
-    }
+  .adver-container {
+    background-image: url('/img/advertisement/adver-desk.png');
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .adver-container {
-            background-image: url('/img/advertisement/adver-desk@2x.png');
-        }
+    .adver-container {
+      background-image: url('/img/advertisement/adver-desk@2x.png');
     }
+  }
 }
