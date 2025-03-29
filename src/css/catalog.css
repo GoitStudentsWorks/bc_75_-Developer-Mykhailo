@@ -31,7 +31,11 @@
 }
 
 .catalog-item + .catalog-item.show-more {
-  display: block;
+  display: flex;
+}
+
+.catalog-item.show-more picture {
+  align-self: center;
 }
 
 .catalog-item picture {
