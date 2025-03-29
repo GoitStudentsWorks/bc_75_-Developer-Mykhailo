@@ -3,7 +3,7 @@
 }
 
 .adver-container {
-  background-image: url('/img/advertisement/adver-mob.png');
+  background-image: url('/img/advertisement/adver-mob.webp');
   background-color: var(--main);
   width: 100%;
   background-repeat: no-repeat;
@@ -99,34 +99,34 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .adver-container {
-    background-image: url('/img/advertisement/adver-mob@2x.png');
+    background-image: url('/img/advertisement/adver-mob@2x.webp');
   }
 }
 
 @media screen and (min-width: 768px) {
   .adver-container {
-    background-image: url('/img/advertisement/adver-tab.png');
+    background-image: url('/img/advertisement/adver-tab.webp');
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .adver-container {
-      background-image: url('/img/advertisement/adver-tab@2x.png');
+      background-image: url('/img/advertisement/adver-tab@2x.webp');
     }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .adver-container {
-    background-image: url('/img/advertisement/adver-desk.png');
+    background-image: url('/img/advertisement/adver-desk.webp');
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .adver-container {
-      background-image: url('/img/advertisement/adver-desk@2x.png');
+      background-image: url('/img/advertisement/adver-desk@2x.webp');
     }
   }
 }
