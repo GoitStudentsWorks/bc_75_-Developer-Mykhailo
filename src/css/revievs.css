@@ -1,5 +1,5 @@
 .section-reviews {
-  padding: 30px 0px;
+  padding-top: 60px;
 }
 
 .reviews-title {
@@ -9,25 +9,104 @@
   line-height: 100%;
   letter-spacing: -0.02em;
   color: var(--main);
-  margin-bottom: 40px;
-}
-
-.reviews-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 20px;
+  margin-bottom: 24px;
 }
 
 .reviews-item {
+  min-width: 335px;
   border-radius: 30px;
   padding: 32px 36px;
   background: var(--cards);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
+
+.reviews-list {
+  display: flex;
+  gap: 20px;
+  width: 300%;
+  margin-bottom: 40px;
+}
+
+/* #region slider*/
+.slide {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.switch-button {
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* #region left button*/
+
+#pic1:checked ~ .switch-button label:nth-child(3),
+#pic3:checked ~ .switch-button label:nth-child(2),
+#pic2:checked ~ .switch-button label:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/arrow-left.png);
+  cursor: pointer;
+}
+
+#pic1:checked ~ .switch-button label:nth-child(3):hover,
+#pic3:checked ~ .switch-button label:nth-child(2):hover,
+#pic2:checked ~ .switch-button label:nth-child(1):hover {
+  background-image: url(../img/arrow-left-1.png);
+}
+
+/* #endregion left button*/
+
+/* #region right button*/
+
+#pic1:checked ~ .switch-button label:nth-child(2),
+#pic2:checked ~ .switch-button label:nth-child(3),
+#pic3:checked ~ .switch-button label:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/arrow-right.png);
+  cursor: pointer;
+}
+
+#pic1:checked ~ .switch-button label:nth-child(2):hover,
+#pic2:checked ~ .switch-button label:nth-child(3):hover,
+#pic3:checked ~ .switch-button label:nth-child(1):hover {
+  background-image: url(../img/arrow-right-1.png);
+}
+
+/* #endregion right button*/
+
+/* move slide */
+#pic1:checked ~ .reviews-list {
+  margin-left: 0;
+}
+
+#pic3:checked ~ .reviews-list {
+  margin-left: -355px;
+}
+
+#pic2:checked ~ .reviews-list {
+  margin-left: -710px;
+}
+/* #endregion slider*/
 
 .reviews-author {
   font-family: var(--font-family);
@@ -50,11 +129,6 @@
   color: rgba(12, 12, 12, 0.4);
 }
 
-.reviews-item:nth-child(2),
-.reviews-item:nth-child(3) {
-  display: none;
-}
-
 .reviews-image {
   margin-bottom: 24px;
 }
@@ -62,14 +136,6 @@
 @media (min-width: 768px) {
   .section-reviews {
     padding-top: 80px;
-  }
-
-  .reviews-item:nth-child(3) {
-    display: none;
-  }
-
-  .reviews-item:nth-child(2) {
-    display: flex;
   }
 
   .reviews-item {
@@ -85,6 +151,7 @@
     line-height: 92%;
     letter-spacing: -0.02em;
     color: var(--main);
+    margin-bottom: 40px;
   }
 
   .reviews-text {
@@ -110,6 +177,19 @@
   .reviews-list {
     gap: 16px;
   }
+
+  /* move slide tablet*/
+  #pic1:checked ~ .reviews-list {
+    margin-left: 0;
+  }
+
+  #pic3:checked ~ .reviews-list {
+    margin-left: -360px;
+  }
+
+  #pic2:checked ~ .reviews-list {
+    margin-left: -720px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -117,19 +197,13 @@
     padding-top: 100px;
   }
 
-  .reviews-item:nth-child(2),
-  .reviews-item:nth-child(3) {
-    display: flex;
-  }
-
   .reviews-list {
-    justify-content: center;
-    gap: 20px;
+    margin-bottom: 0;
   }
 
   .reviews-item {
     padding: 32px 36px;
-    width: 100%;
+    min-width: 370px;
     height: 272px;
   }
 
@@ -160,5 +234,9 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(12, 12, 12, 0.4);
+  }
+
+  .switch-button {
+    display: none;
   }
 }
