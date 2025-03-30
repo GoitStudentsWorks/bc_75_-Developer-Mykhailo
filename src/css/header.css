@@ -44,8 +44,6 @@
 }
 
 .burger-btn {
-  border: none;
-  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,11 +53,7 @@
     display: none;
   }
 }
-.burger-icon {
-  stroke-width: 2.5px;
-  stroke: #0c0c0c;
-  width: 34px;
-}
+
 .header-nav-list {
   display: none;
 }
