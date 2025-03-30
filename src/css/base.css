@@ -30,12 +30,22 @@
   font-display: swap;
 }
 
+/* ---vars */
+
+:root {
+  --main: #0c0c0c;
+  --accent: #3350e9;
+  --background: #fbfbfb;
+  --cards: #f3f3f3;
+  --font-family: 'Gilroy', sans-serif;
+}
+
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Gilroy', sans-serif;
+  font-family: var(--font-family);
 }
 
 html {
@@ -55,14 +65,4 @@ html {
 
 .hidden {
   display: none;
-}
-
-/* ---vars */
-
-:root {
-  --main: #0c0c0c;
-  --accent: #3350e9;
-  --background: #fbfbfb;
-  --cards: #f3f3f3;
-  --font-family: 'Gilroy', sans-serif;
 }
