@@ -117,7 +117,7 @@
 }
 .header-social-list-item:hover,
 .header-social-list-item:focus {
-  border-color: color-mix(in srgb, #3350e9, white 80%);
+  border-color: rgba(51, 80, 233, 0.1);
 }
 .header-social-link {
   display: flex;
