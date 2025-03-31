@@ -1,6 +1,5 @@
 /* Footer CSS by Taras Pererva */
 .footer {
-  padding-top: 30px;
   padding-bottom: 20px;
 }
 
@@ -211,7 +210,6 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding-top: 40px;
     padding-bottom: 32px;
   }
 
@@ -324,10 +322,6 @@
 /* Desktop */
 
 @media screen and (min-width: 1280px) {
-  .footer {
-    padding-top: 50px;
-  }
-
   .footer-container {
     max-width: 1216px;
     margin-bottom: 0;
