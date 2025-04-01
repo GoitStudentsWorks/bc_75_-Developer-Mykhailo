@@ -43,6 +43,7 @@
   align-self: center;
   margin-bottom: 28px;
 }
+.catalog picture:hover {
 transition: transform 0.3s ease-in-out;
 }
 .catalog picture:hover {
