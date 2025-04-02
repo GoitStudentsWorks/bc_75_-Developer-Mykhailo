@@ -48,10 +48,6 @@ body {
   font-family: var(--font-family);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
