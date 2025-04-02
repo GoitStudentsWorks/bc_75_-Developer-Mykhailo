@@ -106,6 +106,10 @@
 #pic2:checked ~ .reviews-list {
   margin-left: -710px;
 }
+
+.reviews-list {
+  transition: all 200ms ease-in-out;
+}
 /* #endregion slider*/
 
 .reviews-author {
