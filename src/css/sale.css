@@ -54,8 +54,12 @@
 .sale-item-images {
     width: 52px;
     height: 54px;
+    transition: transform 0.3s ease-in-out;
 }
-
+.sale-item-images:hover {
+cursor: pointer;
+transform: scale(1.10);
+}
 .sale-img {
     width: 335px;
     height: 385px;
@@ -70,8 +74,12 @@
 .sale-img-wrapper {
     width: 235px;
     height: 285px;
+    transition: transform 0.3s ease-in-out;
 }
-
+.sale-img-wrapper:hover {
+cursor: pointer;
+transform: scale(1.15);
+}
 .sale-card {
     border-radius: 30px;
     max-width: 335px;

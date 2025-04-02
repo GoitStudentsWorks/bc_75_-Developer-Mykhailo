@@ -43,7 +43,13 @@
   align-self: center;
   margin-bottom: 28px;
 }
-
+.catalog picture:hover {
+transition: transform 0.3s ease-in-out;
+}
+.catalog picture:hover {
+cursor: pointer;
+transform: scale(1.15);
+}
 .catalog-text {
   font-weight: 500;
   font-size: 16px;
